@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block content %}
+<p><a href="../{{product_id}}"> BACK</a></p>
+
+<div>
+   <form action="" method="Post">{% csrf_token %}
+    {{edit_form.as_p}}
+    <input type="submit" value="Edit"/>
+   </form>
+
+</div>
+{% endblock%}

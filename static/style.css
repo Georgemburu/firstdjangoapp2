@@ -1,0 +1,90 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+body {
+    background: rgb(241, 238, 238);
+}
+.container {
+    text-align: center;
+}
+header {
+    background: black;
+    padding: 2%;
+}
+nav a {
+    padding: 1.2em 2em;
+    color:  wheat;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+nav a:active {
+    outline: none;
+}
+.container {
+    width: 90vw;
+    margin: auto;
+}
+
+.add-new-p a{
+    background-color: green;
+    width: 30%;
+    margin-bottom: 2%;
+    /* margin: 2% auto; */
+    padding: 2%;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.item-div {
+    border: 1px solid black;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
+}
+.item-div:hover .counter-div  {
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+}
+.counter-div {
+    background: white;
+    position: absolute;
+    top: -50;
+    left: 0;
+    right: 0;
+}
+.item-list-div {
+    background-color: rgb(151, 148, 148);
+}
+.item-title a{
+    color: wheat;
+    text-decoration: none;
+}
+.item-title a:hover {
+    text-decoration: underline;
+}
+
+
+/* create view */
+.item-detail-div {
+    border:1px solid black;
+    margin-bottom: 4px;
+    background-color: #fefefe;
+}
+.delete {
+    background: red;
+    outline: none;
+    padding: 1.3% 2%;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+}

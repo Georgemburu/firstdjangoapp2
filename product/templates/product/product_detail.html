@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block content %}
+<p><a href="{{product.get_absolute_url}}/edit"> Edit Product</a></p>
+<p><a href="{{product.get_absolute_url}}/delete"> Delete Product</a></p>
+
+<div>
+            <div class="item-detail-div" >
+                <h4 class="item-title"><a href="">{{product.title}}</a></h4>
+                <p>{{product.description}}</p>
+                <p>{{product.price}}</p>
+                <p> active <input type="checkbox" checked = {{ product.active }}/></p>
+            </div>
+
+
+</div>
+{% endblock%}

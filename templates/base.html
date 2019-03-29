@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>APP2 DJANGO</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    </head> 
+    <body>
+        <div class="container">
+            {% include 'navbar.html'%}
+            <h1 class="h1-title">Product List View</h1>
+
+            {% block content %}
+                replace me
+            {% endblock %}
+        </div>
+    </body>
+</html>

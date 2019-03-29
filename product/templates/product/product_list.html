@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% block content %}
+{% if message %}
+    {{ message }}
+{% endif %}
+<p class="add-new-p"><a href="product/create"> Add New Product</a></p>
+
+<div>
+    {% for product in queryset %}
+        <div class="item-div" >
+            <div class="counter-div" >{{forloop.counter}}</div>
+            <div class="item-list-div">
+                <h4 class="item-title"><a href="{{ product.get_absolute_url }}">{{product.title}}</a></h4>
+                <p class="item-active"> active <input type="checkbox" {% if product.active %} checked {% endif %}></p>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+{% endblock%}
